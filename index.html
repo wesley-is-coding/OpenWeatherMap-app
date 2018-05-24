@@ -1,0 +1,31 @@
+<body>
+  <div class="container">
+    <div class="weatherBox">
+      <div class="item">
+        <p>Currently displaying the weather in</p>
+        <br>
+        <div class="city"></div>
+        <div class="loader"></div>
+      </div>
+      <div class="item"><p>The weather there is: </p>
+        <div class="weatherIcon"></div>
+        <div class="weather"></div>
+        <div class="loader"></div>
+      </div>
+      <div class="item temp-item"><p>The temperature is: </p>
+        <div class="temp"></div>
+        <button id="tempButton" onclick="changeTemp();">Switch to Fahrenheit</button>
+        <div class="loader"></div>
+      </div>
+      <div class="item search"> 
+        <form id="form" onsubmit="return false;">
+          <p>Search any city in the world:</p>
+          <input type="text" id="userInput" />
+          <br>
+          <button type="submit" onclick="changeCity();">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="author">by Wesley</div>
+  </div>
+</body>
